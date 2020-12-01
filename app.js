@@ -1,3 +1,5 @@
+// start webcam on page load
+
 navigator.mediaDevices.getUserMedia({
         video: true,
         audio: false
@@ -12,3 +14,5 @@ navigator.mediaDevices.getUserMedia({
     .catch(error => {
         alert('Please enable camera permissions')
     })
+
+//caputure button
