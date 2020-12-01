@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- javascript -->
+
+    <script type="text/javascript" src="app.js"></script>
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -11,6 +15,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- webcamjs -->
+    <script src="webcam.js"></script>
 
     <title>Webcam Effects</title>
 </head>
@@ -21,8 +28,8 @@
 <div class="container">
 
  <div class="center-align row">
-     <div id="webcam" class="col s6">webcam</div>
-     <div id="photo" class="col s6">photo</div>
+     <div class="col s6"><video id="webcam" autoplay width="640" height="480"></video></div>
+     <div class="col s6"><canvas id="canvas" class="d-none"></canvas></div>
  </div>
 
 <div class="center-align"><a id="capture" class="waves-effect waves-light btn">say cheese!</a></div>
